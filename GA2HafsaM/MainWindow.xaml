@@ -7,13 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <Button x:Name="btnFullName" Content="Display Full Name" HorizontalAlignment="Left" VerticalAlignment="Center" Width="139" Canvas.Left="577" Canvas.Top="105" Click="btnFullName_Click"/>
-        <Label Content="First Name" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="47" Canvas.Top="101"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="306" Canvas.Top="102"/>
-        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="134" Canvas.Left="119" Canvas.Top="105"/>
-        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="146" Canvas.Left="386" Canvas.Top="105"/>
+        <Button x:Name="btnFullName" Content="Display Full Name" HorizontalAlignment="Center" VerticalAlignment="Top" Width="139" Canvas.Left="577" Canvas.Top="88" Click="btnFullName_Click"/>
+        <Label Content="First Name" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="47" Canvas.Top="84"/>
+        <Label Content="Last Name" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="306" Canvas.Top="85"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Canvas.Left="119" Canvas.Top="88"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Canvas.Left="386" Canvas.Top="88"/>
         <Label Content="Display Your Full Name - Message Box" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Canvas.Left="47" Canvas.Top="44"/>
         <Label Content="Hafsa Mohamed - Guided Assignment 2" Canvas.Left="535" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Perform a Calculation - Label" Canvas.Left="47" Canvas.Top="149" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Number 1" Canvas.Left="47" Canvas.Top="195" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Number 2" Canvas.Left="306" Canvas.Top="195" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumber1" Canvas.Left="119" TextWrapping="Wrap" Canvas.Top="199" Width="134" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtNumber2" Canvas.Left="386" TextWrapping="Wrap" Canvas.Top="199" Width="146" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnAdd" Content="Add" Canvas.Left="132" Canvas.Top="241" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Click="btnAdd_Click"/>
+        <Button x:Name="btnSubtract" Content="Subtract" Canvas.Left="405" Canvas.Top="241" HorizontalAlignment="Left" VerticalAlignment="Center" Width="108" Click="btnSubtract_Click"/>
+        <Label x:Name="lblEquation" Content="Sign" Canvas.Left="628" Canvas.Top="195"/>
 
     </Canvas>
 </Window>
