@@ -93,13 +93,15 @@ namespace GA2HafsaM
             //create a variable to hold the text from txtWord
             string userWord = txtWord.Text;
 
-            //ctreate a variable to get the text from tstCharIndex
-            string index = txtDisplayLetter.Text;
+            //ctreate a variable to get the text from txtCharIndex
+            //and parse the word in one line 
+            string index = txtCharIndex.Text; 
+            int userNumber = int.Parse(index);
+ 
+            //create a char variable
+            char selectedChar = userWord[userNumber];
 
-            //parsing the word in one line 
-            int usersNumber = int.Parse(index);
-            char selectedChar = index[usersNumber];
-
+            //Display the letter
             txtDisplayLetter.Text = selectedChar.ToString();
 
         } //btnDisplayLetter_Click
