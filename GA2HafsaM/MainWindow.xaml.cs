@@ -85,5 +85,42 @@ namespace GA2HafsaM
             //display the equation with label "sign"
             lblEquation.Content = equation;
         }
+
+
+        //Display a letter from a word - textbox
+        private void btnDisplayLetter_Click(object sender, RoutedEventArgs e)
+        {
+            //create a variable to hold the text from txtWord
+            string userWord = txtWord.Text;
+
+            //ctreate a variable to get the text from tstCharIndex
+            string index = txtDisplayLetter.Text;
+
+            //parsing the word in one line 
+            int usersNumber = int.Parse(index);
+            char selectedChar = index[usersNumber];
+
+            txtDisplayLetter.Text = selectedChar.ToString();
+
+        } //btnDisplayLetter_Click
+
+        private void txtWord_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //getting users word out
+            string usersWord = txtWord.Text;
+
+            //getting how many characters are in a word
+            int stringLength = usersWord.Length;
+
+            //getting the last index of the word left
+            int lastIndex = stringLength - 1;
+
+            //displaying the range of 0 to the last index
+            string formattedString = $"Enter a number between 0 and {lastIndex}";
+
+            //displaying it to our label
+            lblNumberOfLetters.Content = formattedString;
+
+        } //txtWord_TextChanged
     }
 }
