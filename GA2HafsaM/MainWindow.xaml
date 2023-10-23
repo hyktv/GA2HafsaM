@@ -25,9 +25,9 @@
         <Label Content="Display a Letter From a Word - TextBox" Canvas.Left="47" Canvas.Top="285" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label Content="Enter a Word" Canvas.Left="47" Canvas.Top="329" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="lblNumberOfLetters" Content="Enter a Number" Canvas.Left="306" Canvas.Top="329" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="btnDisplayLetter" Content="Display Letter" Canvas.Left="577" Canvas.Top="335" HorizontalAlignment="Center" VerticalAlignment="Center" Width="149" Click="btnDisplayLetter_Click"/>
-        <TextBox x:Name="txtDisplayLetter" Canvas.Left="577" TextWrapping="Wrap" Canvas.Top="385" Width="149" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtCharIndex" Canvas.Left="306" TextWrapping="Wrap" Canvas.Top="385" Width="167" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnDisplayLetter" Content="Display Letter" Canvas.Left="577" Canvas.Top="374" HorizontalAlignment="Center" VerticalAlignment="Top" Width="149" Click="btnDisplayLetter_Click"/>
+        <TextBox x:Name="txtDisplayLetter" Canvas.Left="577" TextWrapping="Wrap" Canvas.Top="333" Width="149" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtCharIndex" Canvas.Left="306" TextWrapping="Wrap" Canvas.Top="375" Width="167" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <TextBox x:Name="txtWord" Canvas.Left="133" TextWrapping="Wrap" Canvas.Top="333" Width="134" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="txtWord_TextChanged"/>
 
     </Canvas>
